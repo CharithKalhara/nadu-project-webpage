@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nadu Project</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:#e60000;
+    color:white;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+}
+
+.hero{
+    background:linear-gradient(135deg,#e60000,#ff4d4d);
+    color:white;
+    text-align:center;
+    padding:120px 8%;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 32px;
+    background:white;
+    color:#e60000;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:50px;
+}
+
+.video-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.video-container video{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:#e60000;
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+.stats{
+    background:#e60000;
+    color:white;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.stat h2{
+    font-size:42px;
+}
+
+.stat p{
+    margin-top:10px;
+}
+
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    font-size:17px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav a{
+        margin:0 10px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Nadu</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#demo">Demo</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Nadu Project</h1>
+
+    <p>
+        A cloud-based terminal and system management platform that provides
+        secure browser access, remote administration, automation, and DevOps
+        operations from anywhere.
+    </p>
+
+    <a href="#demo" class="btn">Watch Demo</a>
+</section>
+
+<section class="section" id="demo">
+    <h2 class="section-title">Project Demonstration</h2>
+
+    <div class="video-container">
+        <video controls preload="metadata">
+            <source src="https://courtcasemanagementcharith.s3.ap-southeast-1.amazonaws.com/Nadu+Project.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+</section>
+
+<section class="section" id="features">
+    <h2 class="section-title">Key Features</h2>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>Browser Terminal</h3>
+            <p>Access Linux terminals directly through a secure web browser.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cloud Deployment</h3>
+            <p>Deploy and manage applications on cloud infrastructure.</p>
+        </div>
+
+        <div class="card">
+            <h3>Automation</h3>
+            <p>Execute scripts and automate repetitive operational tasks.</p>
+        </div>
+
+        <div class="card">
+            <h3>User Management</h3>
+            <p>Secure authentication and controlled user permissions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Real-Time Monitoring</h3>
+            <p>Monitor servers, services, and application performance.</p>
+        </div>
+
+        <div class="card">
+            <h3>DevOps Integration</h3>
+            <p>Designed for modern cloud and DevOps workflows.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section stats">
+
+    <div class="stats-grid">
+
+        <div class="stat">
+            <h2>24/7</h2>
+            <p>Remote Access</p>
+        </div>
+
+        <div class="stat">
+            <h2>100%</h2>
+            <p>Web Based</p>
+        </div>
+
+        <div class="stat">
+            <h2>Cloud</h2>
+            <p>Ready</p>
+        </div>
+
+        <div class="stat">
+            <h2>Secure</h2>
+            <p>Authentication</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section" id="about">
+    <h2 class="section-title">About the Project</h2>
+
+    <div class="about">
+        Nadu is a cloud-hosted platform developed to simplify system
+        administration and DevOps operations through a web interface.
+        The platform enables browser-based terminal access, automation,
+        deployment management, and remote administration while
+        maintaining security and ease of use.
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Nadu Project. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
